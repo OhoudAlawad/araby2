@@ -1,0 +1,104 @@
+@import './old-style.css';
+@import '_variables';
+@import '_custom_table';
+@import '_mixins';
+@import '_sale';
+
+
+ .custom-btn{
+    color: #868686;
+    border: 1px solid #ebebeb;
+    box-shadow: none;
+    border-radius: 2px;
+    transition-property: background-color, border-color;
+    transition-duration: 0.3s;
+
+    &:active,
+    &:focus,
+    &:active:focus{
+        outline: none;
+    }
+
+}
+.custom-form-control{
+    @extend .custom-btn;
+
+    &:focus{
+        border-color: $btn-form-control-focus;
+        box-shadow: 0 0 2px 0 $btn-form-control-focus;
+    }
+
+}
+
+
+.custom-navbar {
+    
+        background: white;
+        border: none;
+        border-bottom: 3px solid #EEF0EA;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-bottom: 0px;
+        
+     .custom-btn-primary{
+        background-color: $brand-danger;
+        border-color: $brand-danger;
+        color: white;
+        padding-left: 20px;
+        padding-right: 20px;
+        font-weight: bold;
+
+        &:hover,
+        &:focus,
+        &:active,
+        &:active:focus,
+        &:active:hover{
+            background-color: $btn-danger-color-dark;
+            border-color: $btn-danger-color-dark;
+        }
+
+         .navbar-nav .active > a{
+            background-color: transparent;
+            color: #FF3965;
+            font-weight: bold;
+            border-bottom: 1px solid #FF3965;
+        }
+
+    }
+    .custom-form-control:focus{
+        border-color: $btn-danger-color-dark;
+        box-shadow: 0 0 2px 0 $btn-danger-color-dark;
+    }
+}
+
+.custom-btn-primary{
+    @include button-style($brand-primary);
+   
+}
+
+
+
+.custom-btn-primary2{
+    background-color: $brand-primary;
+    color: white;
+    border-color: $brand-primary;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:focus,
+    &:active:hover{
+        color: white;
+        border-color: $btn-primary-color-dark;
+        background-color: $btn-primary-color-dark;
+    }
+   
+}
+
+
+
+.custom-btn-danger{
+    @include button-style($brand-danger);
+   
+}
+
