@@ -15,79 +15,13 @@ body > .container-fluid > .row:not(:first-child):not(#footer){
     flex-grow: 1;
 }
 
-.custom-dropdown-menu{
-    box-shadow: 0 2px 5px 0 #ebebeb;
-    border-radius: 2px;
-}
 
-.custom-dropdown-menu .checkbox{
-    margin: 0 5px;
-}
-
-
-
-.custom-dropdown-menu> li >a{
-    transition-property: background-color;
-    transition-duration: 0.2s;
-}
-
-.custom-dropdown-menu >li> a:hover,
-.custom-dropdown-menu >li> a:focus{
-    background-color: #FFE7EA;
-}
 
 #btn-shopping-cart {
     padding: 5px 10px;
     margin-left: 10px;
 }
 
-#carousel-featured{
-    background-color: #F7F8F3;
-    height: 400px;
-    padding-top: 25px;
-}
-
-#carousel-featured .item img {
-    height: 375px;
-}
-
-#carousel-featured .product-details{
-    border: 1px solid #DDDDDB;
-    padding: 20px;
-    position: relative;
-    top: 50px;
-    height: 200px;
-    background-color: #F7F8F3;
-}
-
-
-
-#carousel-featured .product-details .product-category{
-    border: 1px solid #DDDDDB;
-    padding: 10px;
-    position: absolute;
-    top: -10px;
-    right: -10px;
-    background-color: #F7F8F3;
-}
-
-#carousel-featured .product-details h1{
-    font-weight: bold;
-    font-size: 175%;
-}
-
-
-
-#carousel-featured .product-details .custom-btn-primary{
-    padding: 10px 25px;
-    margin-top: 15px;
-
-}
-
-#carousel-featured .custom-carousel-indicators-primary{
-    right: 68%;
-    top: 235px;
-}
 
 .custom-carousel-indicators-primary img{
     border: 2px solid #DDDDDB;
@@ -194,28 +128,7 @@ border-color: #f8ad47;
     font-weight: bold;
 }
 
-.custom-carousel-indicators >li{
-    background-color: #c2c2c2;
-    border-radius: 0;
-}
 
-.custom-carousel-indicators{
-    position: static;
-    width: 100%;
-    text-align: center;
-    margin: 0;
-}
-
-.custom-carousel-indicators >li.active{
-    background-color: #565656;
-}
-
-.custom-carousel-indicators >li,
-.custom-carousel-indicators >li.active{
-    height: 13px;
-    width: 13px;
-    margin: 2px;
-}
 
 .custom-heading{
     margin-bottom: 25px;
@@ -360,18 +273,7 @@ border-color: #f8ad47;
   }
 /* الشاشات الصغيرة جدا */
   @media (max-width:767px) {
-    #carousel-featured, #carousel-featured .product-details {
-        height:auto;
-    }
-
-    #carousel-featured .item img{
-        height: 250px;
-    }
     
-    #carousel-featured .product-details{
-        position: static;
-        text-align: center;
-    }
 
     #store-features{
         position: static;
@@ -406,9 +308,7 @@ border-color: #f8ad47;
 }
 /* الشاشات الصغيرة فقط */
 @media(max-width: 768px) and (max-width: 991px){
-    #carousel-featured .custom-carousel-indicators-primary{
-        right: 65%
-    }
+    
     
     .custom-thumbnail img{
         height: 200px;

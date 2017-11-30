@@ -1,0 +1,23 @@
+@import '_variables';
+
+.custom-dropdown-menu{
+    box-shadow: 0 2px 5px 0 #ebebeb;
+    border-radius: 2px;
+
+    .checkbox{
+        margin: 0 5px;
+    }
+    
+    & > li >a{
+        transition-property: background-color;
+        transition-duration: 0.2s;
+    }
+
+    & >li> a:hover,
+    & >li> a:focus{
+        background-color: #FFE7EA;
+    }
+
+
+}
+

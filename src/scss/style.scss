@@ -3,6 +3,9 @@
 @import '_custom_table';
 @import '_mixins';
 @import '_sale';
+@import '_custom-dropdown-menu';
+@import '_carousel-featured';
+@import '_custom-carousel-indicators';
 
 
  .custom-btn{
@@ -59,9 +62,9 @@
 
          .navbar-nav .active > a{
             background-color: transparent;
-            color: #FF3965;
+            color: $brand-danger;
             font-weight: bold;
-            border-bottom: 1px solid #FF3965;
+            border-bottom: 1px solid $brand-danger;
         }
 
     }

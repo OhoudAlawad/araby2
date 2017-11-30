@@ -1,0 +1,27 @@
+@import '_variables';
+
+
+
+.custom-carousel-indicators{
+    position: static;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+
+    & >li{
+        background-color: #c2c2c2;
+        border-radius: 0;
+    }
+
+   & >li.active{
+        background-color: #565656;
+    }
+
+    &>li,
+    & >li.active{
+        height: 13px;
+        width: 13px;
+        margin: 2px;
+    }
+}
+
