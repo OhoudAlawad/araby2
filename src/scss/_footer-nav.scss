@@ -1,0 +1,51 @@
+@import '_variables';
+
+
+#footer-nav{
+    background-color: #1f1f1f;
+    padding-top: 35px;
+    padding-bottom: 25px;
+    color:#575757;
+    background-image: url("../images/bg_footer_1.png"),url("../images/bg_footer_2.png");
+    background-repeat: no-repeat,no-repeat;
+    background-position: 110% 0%, -10% -150%;
+
+    & >.container >div{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+  
+     button{
+        color: inherit;
+    }
+  
+      
+  
+     form{
+        border-top: 1px solid #292929;
+        padding-top: 25px;
+
+        label{
+            margin-bottom: 15px;
+        }
+
+        input{
+            background-color: #303030;
+            border: none;
+            opacity: 0.6;
+        }
+
+    } 
+
+}
+
+@media(max-width:991px){
+    
+    #footer-nav{
+        background-image: url("../images/bg_footer_1.png");
+        background-repeat: no-repeat;
+        background-position: 110% 0%;
+  
+    }
+}
+

@@ -1,0 +1,29 @@
+@import '_variables';
+
+.overlay{
+    position: absolute;
+    background-color: rgba(38, 204, 215, 0.5);
+    height: 250px;
+    width: calc(100% - 34px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 0.3s;
+
+    &:hover{
+        opacity: 1;
+    }
+    
+    .custom-btn{
+        color: $brand-secondary;
+        font-weight: bold;
+    }
+}
+
+@media(max-width:991px){
+    .overlay{
+        display: none;
+    }
+}

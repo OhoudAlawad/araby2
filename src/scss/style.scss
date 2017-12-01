@@ -6,11 +6,18 @@
 @import '_custom-dropdown-menu';
 @import '_carousel-featured';
 @import '_custom-carousel-indicators';
-
-
+@import '_store-features';
+@import '_custom-thumbnail';
+@import '_overlay';
+@import '_footer-nav';
+@import '_custom-bradcrumb';
+@import '_product-option';
+@import '_form-advanced-search';
+@import '_custom-panel';
+@import '_custom-pagination';
  .custom-btn{
-    color: #868686;
-    border: 1px solid #ebebeb;
+    color: $fourth-color;
+    border: 1px solid $border-secondary;
     box-shadow: none;
     border-radius: 2px;
     transition-property: background-color, border-color;
@@ -36,9 +43,9 @@
 
 .custom-navbar {
     
-        background: white;
+        background: $primary-color;
         border: none;
-        border-bottom: 3px solid #EEF0EA;
+        border-bottom: 3px solid $border-primary;
         padding-top: 15px;
         padding-bottom: 15px;
         margin-bottom: 0px;
@@ -46,7 +53,7 @@
      .custom-btn-primary{
         background-color: $brand-danger;
         border-color: $brand-danger;
-        color: white;
+        color: $primary-color;
         padding-left: 20px;
         padding-right: 20px;
         font-weight: bold;
@@ -83,7 +90,7 @@
 
 .custom-btn-primary2{
     background-color: $brand-primary;
-    color: white;
+    color: $primary-color;
     border-color: $brand-primary;
 
     &:hover,
@@ -91,7 +98,7 @@
     &:active,
     &:active:focus,
     &:active:hover{
-        color: white;
+        color: $primary-color;
         border-color: $btn-primary-color-dark;
         background-color: $btn-primary-color-dark;
     }
@@ -105,3 +112,37 @@
    
 }
 
+.custom-carousel-indicators-primary img{
+    border: 2px solid $spcial-border;
+    background-color: $primary-color;
+}
+
+.custom-carousel-indicators-primary img.active{
+border-color: $brand-primary;
+}
+
+.custom-carousel-control.right,
+.custom-carousel-control.left{
+    background: transparent;
+    color: $fourth-color;
+    text-shadow: none;
+}
+
+.price{
+    color: $brand-secondary;
+    margin: 10px 0;
+}
+.rating{
+    color: $secondary-color;
+}
+
+.rating .active{
+    color: $brand-primary;
+}
+
+#contact-info i {
+    color: $brand-primary;
+    margin: 10px;
+    width:25px;
+    text-align: center;
+}

@@ -1,0 +1,29 @@
+@import '_variables';
+
+/* المنتج */
+.custom-bradcrumb{
+    background-color: transparent;
+    padding-top: 25px;
+    padding-bottom: 25px;
+
+     a{
+        color: inherit;
+        text-decoration: none;
+        transition-property: color;
+        transition-duration: 0.3s;
+    }
+    
+     a:hover{
+        color: $brand-primary;
+    }
+    
+     .active{
+        color:$secondary-color;
+    }
+    
+    & >li + li:before{
+        content: '>';
+        color: $third-color;
+    }
+}
+

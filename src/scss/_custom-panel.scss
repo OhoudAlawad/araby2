@@ -1,0 +1,30 @@
+
+@import '_variables';
+.custom-panel{
+    border: 4px solid $border-primary;
+    border-radius: 2px;
+    box-shadow: none;
+    padding: 5px;
+
+    .product-image{
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    
+     h4,  .price{
+        font-size: 130%;
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    
+     .carousel{
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .panel-heading{
+        background-color: transparent;
+        border-bottom: 1px solid $border-secondary;
+    }
+}
+

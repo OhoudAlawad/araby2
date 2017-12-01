@@ -2,7 +2,7 @@
 @import '_variables';
 
 #carousel-featured{
-    background-color: #F7F8F3;
+    background-color: $background-product-featured;
     height: 400px;
     padding-top: 25px;
 
@@ -11,20 +11,20 @@
     }
 
     .product-details{
-        border: 1px solid #DDDDDB;
+        border: 1px solid $spcial-border;
         padding: 20px;
         position: relative;
         top: 50px;
         height: 200px;
-        background-color: #F7F8F3;
+        background-color: $background-product-featured;
 
         .product-category{
-            border: 1px solid #DDDDDB;
+            border: 1px solid $spcial-border;
             padding: 10px;
             position: absolute;
             top: -10px;
             right: -10px;
-            background-color: #F7F8F3;
+            background-color: $background-product-featured;
         }
 
         h1{

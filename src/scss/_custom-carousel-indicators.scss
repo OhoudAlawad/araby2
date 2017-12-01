@@ -9,12 +9,12 @@
     margin: 0;
 
     & >li{
-        background-color: #c2c2c2;
+        background-color: $secondary-color;
         border-radius: 0;
     }
 
    & >li.active{
-        background-color: #565656;
+        background-color: $third-color;
     }
 
     &>li,

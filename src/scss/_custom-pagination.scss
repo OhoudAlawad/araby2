@@ -1,0 +1,41 @@
+@import '_variables';
+.custom-pagination >li >a{
+    color: $secondary-color;
+    border: 1px solid $border-secondary;
+    width: 32px;
+    height: 32px;
+    margin-right: 3px;
+    margin-left: 3px;
+    transition-property: color, border-color;
+    transition-duration: 0.3s;
+
+    &:focus,
+    &:active,
+    &:hover{
+        color: $btn-primary-color-dark;
+        border-color: $btn-primary-color-dark;
+    }
+
+}
+
+.custom-pagination >li:first-child>a,
+.custom-pagination >li:last-child>a{
+    border-radius: 0px;
+}
+
+
+
+.custom-pagination >li.active >a{
+    background-color: $brand-primary;
+    color: $primary-color;
+    border-color: $brand-primary;
+
+    &:focus,
+    &:active,
+    &:hover{
+        background-color: $btn-primary-color-dark;
+        color: $primary-color;
+        border-color: $btn-primary-color-dark;
+    }
+}
+

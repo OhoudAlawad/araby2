@@ -1,0 +1,33 @@
+@import '_variables';
+
+#store-features{
+    box-shadow: 0 0 15px $border-primary;
+    padding-bottom: 35px;
+    padding-top: 5px;
+    position: relative;
+    top: -30px;
+    background-color: $primary-color;
+    background-image: url("../images/bg_features.png");
+    background-repeat: no-repeat;
+    background-size: auto 60%;
+    background-position: -10px -20px;
+
+    & >.feature+.feature{
+        border-right: 1px solid $border-primary;
+    }
+
+    & >.feature>img{
+        height: 40px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:767px) {
+    
+
+    #store-features{
+        position: static;
+    }
+}
+
+
