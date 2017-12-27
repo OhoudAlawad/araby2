@@ -49,6 +49,13 @@
         padding-top: 15px;
         padding-bottom: 15px;
         margin-bottom: 0px;
+
+        .navbar-nav .active > a{
+            background-color: transparent;
+            color: $brand-danger;
+            font-weight: bold;
+            border-bottom: 1px solid $brand-danger;
+        }
         
      .custom-btn-primary{
         background-color: $brand-danger;
@@ -67,12 +74,7 @@
             border-color: $btn-danger-color-dark;
         }
 
-         .navbar-nav .active > a{
-            background-color: transparent;
-            color: $brand-danger;
-            font-weight: bold;
-            border-bottom: 1px solid $brand-danger;
-        }
+         
 
     }
     .custom-form-control:focus{
