@@ -28,8 +28,10 @@
         }
 
         h1{
-            font-weight: bold;
-            font-size: 175%;
+            font: {
+                weight: bold;
+                size: 175%;
+            }
         }
 
         .custom-btn-primary{

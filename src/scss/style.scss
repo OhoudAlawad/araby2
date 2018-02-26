@@ -22,8 +22,10 @@
     border: 1px solid $border-secondary;
     box-shadow: none;
     border-radius: 2px;
-    transition-property: background-color, border-color;
-    transition-duration: 0.3s;
+    transition: {
+        property: background-color, border-color;
+        duration: 0.3s;
+    }
 
     &:active,
     &:focus,
@@ -43,8 +45,10 @@
 }
 
 .custom-input-lg{
-    border-width:2px;
-    border-radius: 3px;
+    border: {
+        width:2px;
+        radius: 3px;
+    }
 
     &:focus,
     &:active,
@@ -57,8 +61,10 @@
         background: $primary-color;
         border: none;
         border-bottom: 3px solid $border-primary;
-        padding-top: 15px;
-        padding-bottom: 15px;
+        padding: {
+            top: 15px;
+            bottom: 15px;
+        }
         margin-bottom: 0px;
 
         .navbar-nav .active > a{
@@ -69,24 +75,12 @@
         }
         
      .custom-btn-primary{
-        background-color: $brand-danger;
-        border-color: $brand-danger;
-        color: $primary-color;
-        padding-left: 20px;
-        padding-right: 20px;
-        font-weight: bold;
-
-        &:hover,
-        &:focus,
-        &:active,
-        &:active:focus,
-        &:active:hover{
-            background-color: $btn-danger-color-dark;
-            border-color: $btn-danger-color-dark;
-            color: $primary-color;
+        padding: {
+            left: 20px;
+            right: 20px;
         }
-
-         
+        font-weight: bold;
+        @include button-primary($brand-danger,$primary-color);
 
     }
     .custom-form-control:focus{
@@ -103,19 +97,7 @@
 
 
 .custom-btn-primary2{
-    background-color: $brand-primary;
-    color: $primary-color;
-    border-color: $brand-primary;
-
-    &:hover,
-    &:focus,
-    &:active,
-    &:active:focus,
-    &:active:hover{
-        color: $primary-color;
-        border-color: $btn-primary-color-dark;
-        background-color: $btn-primary-color-dark;
-    }
+    @include button-primary($brand-primary,$primary-color);
    
 }
 

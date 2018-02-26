@@ -10,8 +10,10 @@
             padding: 15px;
             font-size: 120%;
             vertical-align: middle;
-            border-bottom: 1px solid $border-secondary;
-            border-top:  1px solid $border-secondary;
+            border: {
+                bottom: 1px solid $border-secondary;
+                top:  1px solid $border-secondary;
+            }
             &:not(:first-child) {
                 text-align: center;
             }

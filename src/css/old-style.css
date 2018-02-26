@@ -254,10 +254,7 @@ body > .container-fluid > .row:not(:first-child):not(#footer){
     min-width: 250px;
 }
 
-.heading-inline{
-    display: inline-block;
-    min-width: 250px;
-}
+
 
 .heading-with-border-bottom{
     border-bottom: 2px solid #EBEBEB;

@@ -3,16 +3,22 @@
 
 #footer-nav{
     background-color: #1f1f1f;
-    padding-top: 35px;
-    padding-bottom: 25px;
+    padding: {
+        top: 35px;
+        bottom: 25px;
+    }
     color:#575757;
-    background-image: url("../images/bg_footer_1.png"),url("../images/bg_footer_2.png");
-    background-repeat: no-repeat,no-repeat;
-    background-position: 110% 0%, -10% -150%;
+    background: {
+        image: url("../images/bg_footer_1.png"),url("../images/bg_footer_2.png");
+        repeat: no-repeat,no-repeat;
+        position: 110% 0%, -10% -150%;
+    }
 
     & >.container >div{
-        margin-top: 15px;
-        margin-bottom: 15px;
+        margin: {
+            top: 15px;
+            bottom: 15px;
+        }
     }
   
      button{
@@ -42,9 +48,11 @@
 @media(max-width:991px){
     
     #footer-nav{
-        background-image: url("../images/bg_footer_1.png");
-        background-repeat: no-repeat;
-        background-position: 110% 0%;
+        background: {
+            image: url("../images/bg_footer_1.png");
+            repeat: no-repeat;
+            position: 110% 0%;
+        }
   
     }
 }

@@ -3,8 +3,10 @@
     border: 2px solid $border-primary;
     padding: 8px;
     cursor: pointer;
-    margin-left: -8px;
-    margin-right: -8px;
+    margin: {
+        left: -8px;
+        right: -8px;
+    }
 
     & :hover{
         border-color: $brand-secondary;
@@ -18,8 +20,10 @@
 @media (max-width:767px) {
     
     .custom-thumbnail{
-        margin-right: 0;
-        margin-left: 0;
+        margin: {
+            right: 0;
+            left: 0;
+        }
     }
 }
 
