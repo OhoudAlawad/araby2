@@ -1,10 +1,8 @@
 @import './JF-flat.css';
 
 body{
-    font-family: 'JF Flat Regular', 'Times New Roman', Times, serif;
     overflow: -moz-scrollbars-vertical; overflow-x: hidden; overflow-y: scroll;  
-
-   
+    font-family: 'JF Flat Regular', 'Times New Roman', Times, serif;
 }
 
 body > .container-fluid {
