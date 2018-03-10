@@ -2,6 +2,8 @@
 
 body{
     font-family: 'JF Flat Regular', 'Times New Roman', Times, serif;
+    overflow: -moz-scrollbars-vertical; overflow-x: hidden; overflow-y: scroll;  
+
    
 }
 
